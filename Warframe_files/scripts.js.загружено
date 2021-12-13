@@ -1,0 +1,57 @@
+jQuery(function($){
+
+    $('ul.nav-links').superfish();
+
+    $(".hamburgerMenu").click(function() {
+        $(".mobileNav").animate({"top":"0%"}, "slow");
+
+        $(document).keyup(function(e){
+            if(e.keyCode == 27)
+            {
+                closeHamburger(false);
+            }
+        });
+
+        $('.closeMobileMenu').click(function(e){
+            e.preventDefault();
+            closeHamburger(true);
+        });
+
+        $('.mobileNav').swipe({
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if(direction == 'up'){
+                    closeHamburger(true);
+                }
+            }
+        });
+    });
+
+    $('.alert .close').click(function(){
+       $(this).parent().fadeOut(function(){
+            $(this).remove();
+       });
+    });
+
+    $('.alert-danger ul li a').click(function(){
+        $('.alert').fadeOut(function(){
+            $(this).remove();
+        });
+    });
+
+    function closeHamburger(befaster){
+        var speed = (befaster ? 300 : "slow");
+        $(".mobileNav").animate({"top":"-120%"},speed);
+    }
+
+    $(window).scroll(function(){
+        var topWindow = $(window).scrollTop();
+        topWindow = topWindow * 1.5;
+
+        var windowHeight = 1080;
+
+        var position = topWindow / windowHeight;
+        position = 1 - position;
+
+       $('#fullScreenDownArrow').css('opacity',position);
+    });
+});

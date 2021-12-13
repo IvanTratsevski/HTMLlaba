@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>NEWS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <header>
+            <a href="index.html" id="logo"><img src="images/mlogo.jpg" class="logoimg"></a>
+            <h1 id="maintitle">Warframe NEWS</h1>
+        </header>
+        <nav>
+            
+            <ul id="navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="https://www.gstu.by/">Сообщество</a></li>
+                <li><a href="https://www.warframe.com/ru">Официальный сайт</a></li>
+                <li><a href="update.html">Обновления</a></li>
+                <li><input type="search" name="q" list="newssearch">
+                    <datalist id="newssearch">
+                        <option value="Новость 1"><a href="news1.html">Новость 1</a></option>
+                        <option value="Новость 2"><a href="news2.html">Новость 2</a></option>
+                        <option value="Новость 3"><a href="news3.html">Новость 3</a></option>
+                        <option value="Новость 4"><a href="news4.html">Новость 4</a></option>
+                    </datalist>
+                <li><input id="searchbtn" type="submit" value="Найти"></li>
+            </ul>
+            
+        </nav>
+        
+        
+        <main>
+    
+            <div id="forma">
+            <form id="regform">
+      			<legend id="formlegend">Регистрация</legend>
+                <ul>
+                    <li>
+      				  <label class="labeltxt">Введите ваше имя</label>
+      				  <input type="text" class="form-control"  placeholder="Имя">
+                    </li>
+                    <li>
+      				  <label class="labeltxt">Введите вашу фамилию</label>
+      				  <input type="text" class="form-control"  placeholder="Фамилия">
+                    </li>
+                    
+                    <li>
+                        <label class="labeltxt">Выберите пол</label>
+                        <br>
+                        <label>
+                        <input type="radio" name="question">
+                        Мужской
+                        </label>
+                        <br>
+                        <label>
+                        <input type="radio" name="question">
+                        Женский
+                        </label>
+                    </li>
+                  
+                    <li>
+      				  <label class="labeltxt">Выберите дату рождения</label>
+      				  <input type="date" class="form-control">
+                    </li>
+                    
+      			    <li>
+                        <label class="labeltxt">Введите номер телефона</label>
+                        <input type="tel" class="form-control" placeholder="+7 (111) 11 11 111">
+      			    </li>
+      		
+                    <li>
+                        <label class="labeltxt">Введите email</label>
+                        <input type="email" class="form-control" placeholder="mail@mail.ru">
+                    </li>
+                 
+                    <li>
+                        <label class="labeltxt">Введите пароль</label>
+                        <input type="password" class="form-control" placeholder="">
+                    </li>
+                
+                    <li>
+                        <label class="labeltxt">Повторите пароль пароль</label>
+                        <input type="password" class="form-control" placeholder="">
+                    </li>
+              
+                    <li>
+                        <label class="labeltxt">Выберите аватар</label>
+                        <br>
+                        <input type="file" class="formbtn">
+                    </li>
+                    <li>
+                        <label class="labeltxt">Выберите любимый цвет</label>
+                        <br>
+                        <input type="color">
+                    </li>
+                    <li>
+                        <select>
+                            <option selcted>Выберите любимого Варферейма</option>
+                            <option>Вольт</option>
+                            <option>Мэг</option>
+                            <option>Эш</option>
+                            <option>Гаус</option>
+                            <option>Атлас</option>
+                            <option>Нидус</option>
+                            <option>Эш</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label class="labeltxt">Расскажите о себе</label>
+                        <textarea></textarea>
+                    </li>
+             
+                    <li>
+                        <label class="labeltxt">Я прочитал(а) пользовательское соглашение
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="labeltxt">Согласен(на) на отправку новостей на почту
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    
+      		        <li>
+      			       <button type="submit" class="formbtn">Отправить форму</button>
+                    </li>
+                    <li>
+      			       <button type="reset" class="formbtn">Очистить форму</button>
+                    </li>
+                </ul>
+      		</form>
+            </div>
+        </main>
+
+    </body>
+    
+</html>

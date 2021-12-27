@@ -7,7 +7,8 @@
     src: url(fonts/montse.ttf); /* Путь к файлу со шрифтом */
 }
 html{
-    font-family: Comforta, 'Comic Sans MS', cursive
+    font-family: Comforta, 'Comic Sans MS', cursive;
+	max-width: 1080px;
 }
 h1 {
     font-family: montse, 'Comic Sans MS', cursive;
